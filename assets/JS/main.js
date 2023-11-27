@@ -48,8 +48,8 @@ const app = {
             image: './assets/music/img/song4.jpg',
         },
         {
-            name: 'Sài gòn đau lòng quá',
-            singer: 'Hứa Kim Tuyền',
+            name: 'Già cùng nhau là được',
+            singer: 'Tea, PC',
             path:'./assets/music/song5.mp3',
             image: './assets/music/img/song5.jpg',
         },
@@ -66,10 +66,22 @@ const app = {
             image: './assets/music/img/song7.jpg',
         },
         {
-            name: 'Phố không mùa',
-            singer: 'Bùi Anh Tuấn',
+            name: 'Nếu lúc đó',
+            singer: 'tlinh',
             path:'./assets/music/song8.mp3',
             image: './assets/music/img/song8.jpg',
+        },
+        {
+            name: 'À lôi',
+            singer: 'Double2T, Masew',
+            path:'./assets/music/song9.mp3',
+            image: './assets/music/img/song9.jpg',
+        },
+        {
+            name: 'Khóa ly biệt',
+            singer: 'Voi bản đôn',
+            path:'./assets/music/song10.mp3',
+            image: './assets/music/img/song10.jpg',
         },
     ],
     renderSongs: function (){
