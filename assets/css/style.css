@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #1f4cd5;
+}
+html {
+    
+    font-family:'overpass',sans-serif;
+    font-size: 17px;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom right, #d8f1e7, #90e7cd, #19d293);
+}
+.cd-thumb{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top:8px;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.darhboard{   
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom right, #0b8ca1, #cfebe6, #66e1b7);
+}
+
+header {
+    text-align: center;
+    margin-top: 8px;
+
+    & h2{
+        margin-top:10px;
+    }
+
+    & h4{
+        color: var(--primaryColor);
+    }
+}
+
+.control{
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    justify-content: center;
+    .btn{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .btn-play {
+        .fa-pause{
+            display:none;
+        }
+        .fa-play {
+            width: 10.63px;
+        }
+    }
+}
+
+/* Chuyển nút pause thành play */
+.playing{
+    .btn-play{
+        
+        .fa-play{
+            display:none;
+        }
+        .fa-pause{
+            display:block;
+        }
+    }
+}
+
+
+/* đổi màu cho nút random */
+.active{
+    color: var(--primaryColor)
+}
+
+.song.active{
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* :active là pseudo class: đại diện cho 1 phần tử (như nút) mà người dùng
+đang kích hoạt. nó active khi click chuột vào nó */
+.song:active{ 
+    /* tạo hiệu ứng khi nhấn vào */
+    opacity: 0.5;
+}
+
+.song.active .title, .song.active .author, .song.active .option {
+    color: var(--primaryColor);
+}
+
+.progress{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.playlist{
+    background-image: linear-gradient(to bottom right, #88e6bf, #cfebe6, #3aa4ba);
+    margin-top: 446px;
+    .song{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        height: 75px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        font-size: 10px;
+        margin-top:10px;
+
+        .thumb{
+            height: 50px;
+            width: 50px;
+            background-size: cover;
+            border-radius: 100px;
+            margin: 0px 0px 0px 20px;
+        }
+
+        .option{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:10px;
+        }
+    }
+}

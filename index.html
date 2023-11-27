@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/412226eb32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="player">
+        <!-- Darhboard -->
+        <div class="darhboard">
+            <!-- header -->
+            <header>
+                <h4></h4>
+                <h2></h2>
+            </header>
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url(https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/0/7/2/a/072ad73889c625846b27fea36fc12c13.jpg);">
+                </div>
+            </div>
+            <!-- control -->
+
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="btn btn-prev">
+                    <i class="fa-sharp fa-solid fa-backward"></i>
+                </div>
+
+                <div class="btn btn-play">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="fa-sharp fa-solid fa-forward"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+                <input id="progress" class="progress"  type="range" value="0" step="1" min="0" max="100" >
+                <audio id="audio" src=""></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+                
+            </div>
+    </div>
+
+    <script src="./assets/JS/main.js"> </script>
+</body>
+</html>
